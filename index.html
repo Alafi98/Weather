@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   
+
+    <div class="weather"> 
+        <div class="weather-hijo">
+            <div class="weather-buscador">
+                <label for="buscador-hijo">Ahora mismo en</label>
+                <input id='buscador-hijo' type="text" placeholder="Ej Caracas">
+            </div>
+            <p id="description">it's clear.</p>
+        </div>
+
+
+        <div class="weather-info" >
+            <div class="weather-img">
+                <img class='sol-img' src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+            </div>
+            <div class="weather-main">
+                <p id="temperatura">99°</p>
+                <div class="weather-main__status">
+                        <p id="temperatura-min">69°</p>
+                        <p id="temperatura-max"> /100°</p>
+                </div>
+            </div>
+            <div class="weather-description">
+                <div class="weather-description__img">
+                    <img src="./fotos/vientoo.svg" alt="">
+                    <img src="./fotos/paraguass.svg" alt="">
+                    <img src="./fotos/gotass.svg" alt="">
+                </div>
+                <div class="weather-description__info">
+                    <p id="viento">8 Kmph</p>
+                    <p id="lluvia">0%</p>
+                    <p id="humedad">30%</p>
+                </div>
+            </div>
+       
+        </div>
+
+        <div class="country">
+            <div class="country-inf">
+                <p id="pais">Pais: <span>Venezuela</span></p>
+                <p id="ciudad">Ciudad: <span>Caracas</span></p>
+            </div>
+            <div class="country-coor">
+                <p id="latitud">Latitud: <span>14.15</span></p>
+                <p id="longitud">Longitud: <span>12.12</span></p>
+            </div>
+        
+        </div>
+    </div>  
+  
+
+
+
+
+    <script src="./weather.js/index.js"></script>
+    
+</body>
+</html>

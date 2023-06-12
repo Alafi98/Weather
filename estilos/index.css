@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+:root {
+    --font-color:rgba(53, 54, 52, 0.685);
+    --font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#buscador-hijo{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 45px;
+    width: 250px;
+
+}
+
+label{
+    color: var(--font-color);
+}
+
+#buscador-hijo::placeholder {
+    color: rgba(0, 0, 0, 0.823);
+}
+
+.weather { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../fotos/paisaje6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-family);
+
+}
+
+.weather-hijo {
+    display: flex;
+    font-size: 50px;
+
+}
+
+#description {
+    color: var(--font-color);
+    
+}
+
+.weather-buscador {
+    
+    margin-top: 48px;
+    
+}
+
+.weather-info {
+    display: flex;
+    margin-left: 20px;
+}
+
+#temperatura {
+    font-size: 110px;
+    margin: 65px 0 60px;
+}
+
+.weather-img img{
+    width: 400px;
+    position: static;
+}
+
+.weather-main {
+    padding-right: 10px;
+    margin-left: 65px;
+}
+
+.weather-main__status {
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    margin-left: 15px;
+    font-size: 25px;
+    color: var(--font-color);
+}
+
+.weather-description{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    font-size: 35px;
+    gap: 15px;
+    position: relative;
+    left: 165px;
+    margin-right: 235px;
+    color: var(--font-color);
+}
+
+.weather-description__img{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.weather-description__img img {
+    width: 37px;
+}
+ 
+.weather-description__info {
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+}
+
+
+
+#viento {
+    margin: 0;
+}
+
+#lluvia {
+    margin: 0;
+    margin-top: 21px;
+}
+
+#humedad {
+    margin: 0;
+    margin-top: 19px;
+}
+
+
+
+.country {
+    display: flex;
+    width: inherit;
+    justify-content: space-around;
+}
+
+/* .country span{
+    color: var(--font-color);
+} */
+
+.country-inf {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    position: relative;
+    left: 400px;
+}
+
+
+.country-coor {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    position: relative;
+    right: 400px;
+}
+
